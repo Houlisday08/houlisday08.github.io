@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <script src="portfolio.js" defer></script>
+    <title>It's me.</title>
+</head>
+
+
+
+<body>
+    <div class="gba-body">
+        <div class="gba-screen">
+
+
+            <header>
+                <nav>
+                    <button onclick="showSection('accueil')">Menu</button>
+                    <button onclick="showSection('about')">About me</button>
+                    <button onclick="showSection('projects')">Projects</button>
+                    <button onclick="showSection('skills')">Skills</button>
+                    <button onclick="showSection('contact')">Contact</button>
+                    <button id="theme-btn">Dark</button>
+                </nav>
+            </header>
+
+
+            
+            <main>
+                <!-- ACCUEIL -->
+                <section id="accueil" class="section active">
+                    <h1>Ronell Ouattara</h1>
+                    <p>Portfolio</p>
+                    <button onclick="showSection('about')">PLAY</button>
+                </section>
+
+
+
+                <!-- ABOUT -->
+                <section id="about" class="section">
+                    <h1>About me</h1>
+                    <div class="all">
+                        <div class="img">
+                            <img class="me" src="img/me.jpg" alt="Ronell" width="350px" height="450px">
+                        </div>
+                        <div class="txt">
+                            <p>My name is Ronell, I have always been attracted to everything that
+                                is digital, futuristic, sci-fi, anything that sounds futuristic,
+                                that's what brought me to Epitech. I like the idea of creating 
+                                beautiful and practical things. When I'm not coding, I listen to 
+                                music, I play or I do sports. </p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- PROJECTS -->
+                <section id="projects" class="section">
+                    <h1>Projects</h1>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-tag">Web App</div>
+                            <div class="project-name">E-Todo List</div>
+                            <div class="project-desc">Task management application with login system and custom list.</div>
+                            <div class="project-stack">
+                                <span class="stack-tag">HTML</span>
+                                <span class="stack-tag">CSS</span>
+                                <span class="stack-tag">JS</span>
+                                <span class="stack-tag">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">Cybersécurity</div>
+                            <div class="project-name">Hack_Juice</div>
+                            <div class="project-desc">Exploitation of vulnerabilities on OWASP Juice Shop.</div>
+                            <div class="project-stack">
+                                <span class="stack-tag">Burp Suite</span>
+                                <span class="stack-tag">OWASP</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">Product Design</div>
+                            <div class="project-name">Yowl</div>
+                            <div class="project-desc">Student platform designed in a group, from the mock-up to the final product.</div>
+                            <div class="project-stack">
+                                <span class="stack-tag">HTML</span>
+                                <span class="stack-tag">CSS</span>
+                                <span class="stack-tag">JS</span>
+                                <span class="stack-tag">Node.js</span>
+                                <span class="stack-tag">Figma</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">Data / IA</div>
+                            <div class="project-name">Tardis</div>
+                            <div class="project-desc">Analysis of SNCF delays with AI models to predict and visualize data.</div>
+                            <div class="project-stack">
+                                <span class="stack-tag">Python</span>
+                                <span class="stack-tag">Jupyter</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">Data / IA</div>
+                            <div class="project-name">Nextbuy</div>
+                            <div class="project-desc">Analysis of in-store shopping trends to predict the most popular items.</div>
+                            <div class="project-stack">
+                                <span class="stack-tag">Python</span>
+                                <span class="stack-tag">Jupyter</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">IA</div>
+                            <div class="project-name">AliceInWonderland</div>
+                            <div class="project-desc">Data extraction and analysis from an online book using AI.</div>
+                            <div class="project-stack">
+                                <span class="stack-tag">Python</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">Chatbot</div>
+                            <div class="project-name">Eliza</div>
+                            <div class="project-desc">Discord Chatbot developed in a group with a relational database.</div>
+                            <div class="project-stack">
+                                <span class="stack-tag">JS</span>
+                                <span class="stack-tag">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-tag">Web App</div>
+                            <div class="project-name">JobAggregator</div>
+                            <div class="project-desc">Job aggregator, end of year group project.</div>
+                            <div class="project-stack">
+                                <span class="stack-tag">HTML</span>
+                                <span class="stack-tag">CSS</span>
+                                <span class="stack-tag">JS</span>
+                                <span class="stack-tag">Node.js</span>
+                                <span class="stack-tag">Python</span>
+                                <span class="stack-tag">MySQL</span>
+                                <span class="stack-tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- SKILLS -->
+                <section id="skills" class="section">
+                    <h1>Skills</h1>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <div class="skill-cat-title">Frontend</div>
+                            <div class="skill-item">HTML</div>
+                            <div class="skill-item">CSS</div>
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">Figma</div>
+                        </div>
+                        <div class="skill-category">
+                            <div class="skill-cat-title">Backend</div>
+                            <div class="skill-item">Node.js</div>
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">MySQL</div>
+                        </div>
+                        <div class="skill-category">
+                            <div class="skill-cat-title">Cybersécurité</div>
+                            <div class="skill-item">OWASP</div>
+                            <div class="skill-item">Burp Suite</div>
+                        </div>
+                        <div class="skill-category">
+                            <div class="skill-cat-title">Data - IA</div>
+                            <div class="skill-item">Jupyter Notebook</div>
+                            <div class="skill-item">Analyse de données</div>
+                            <div class="skill-item">Modèles IA</div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- CONTACT -->
+                <section id="contact" class="section">
+                    <h1>Contact</h1>
+                    <div class="contact-box">
+                        <p>Liked my portfolio ?</p>
+                        <p class="contact-sub">All my contacts are right below!</p>
+                        <div class="contact-links">
+                            <div class="contact-link">
+                                <span class="contact-icon">EMAIL</span>
+                                <span>ronell2005@gmail.com</span>
+                            </div>
+                            <div class="contact-link">
+                                <span class="contact-icon">GITHUB</span>
+                                <a href="https://github.com/Houlisday08">Houlisday08</a>
+                            </div>
+                            <div class="contact-link">
+                                <span class="contact-icon">LINKEDIN</span>
+                                <a href="https://www.linkedin.com/in/ronell-o-90717526a/">LINKEDIN</a>
+                            </div>
+                            <div class="contact-link">
+                                <span class="contact-icon">CV</span>
+                                <a href="Ronell.pdf" download>Download my CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+
+        </div>
+    </div>
+</body>
+</html>
